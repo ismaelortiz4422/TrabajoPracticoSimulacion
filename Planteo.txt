@@ -1,0 +1,12 @@
+Eventos
+-llegada_buque		Exp.Negativa(24 Horas)		=-24*LN(1-RND)
+-fin_descarga		Dist.Uniforme(Minimo 12 HORAS y Maximo 20 HORAS)	=12+RND(20-12)
+     i = 1, 2
+-fin_mantenimiento	Constante 1 HORA
+-en_fondeo		Constante 18 HORAS
+
+
+Objetos
+-buque			{Temporal}	{esperando_descarga (EA) | fin_atencion (FA) | en_fondeo (EF) | esperando_mantenimiento (EM)}
+-muelle/grua(i)		{Permanente}	{Libre | Ocupado | EnMantenimiento}
+	i = 1, 2
