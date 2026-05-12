@@ -4,7 +4,7 @@ class Muelle:
         self.estado = estado
 
     def ocupar(self):
-        self.estado = "Ocupado"
+        self.estado = "En descarga"
         
     def liberar(self):
         self.estado = "Libre"
